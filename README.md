@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Recipe Planet Applikation (del 2)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![""](./recipeplanet.png)
 
-## Available Scripts
+I denne anden del af Recipe Planet skal du lave selve applikationen.
 
-In the project directory, you can run:
+Applikationen er en præsentation af opskrifter som kommer fra APIet (se del 1).
 
-### `npm start`
+Applikationen er tiltænkt tablets.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Designet finder du her](./RecipePlanet.fig).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Beskrivelse
+Recipe Planet applikationen er en opskriftpræsentation, som lader brugere vælge mellem forskellige kategorier af opskrifter.
 
-### `npm test`
+Dette kan fx være
+* Chicken
+* Fruits
+* Chinese
+* Mexican
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Brugere kan også vælge mellem forskellige typer, fx
+* Dinner
+* Lunch
+* Breakfast
+* Snacks
 
-### `npm run build`
+Disse typer og kategorier er tænkt som sorterings eller filtreringsmuligheder for brugeren.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Dette betyder, at hvis en bruger vælger Mexican øverst og Dinner i venstre side så får brugeren vist alle oskrifter som matcher de kriterier.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Opskrifterne præsenteres som en slider, hvor brugeren kan "swipe" mellem opskrifterne. Hvis en bruger klikker på "View all ingredients" på en opskrift, vises en liste over ingredienser i et modal vindue. Du skal selv bestemme hvordan dette modal vindue skal se ud, men det skal følge det øvrige design.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Det samme gør sig gældende for knappen "Recipe".
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+"Add to favourites"-knappen skal du ignorere.
